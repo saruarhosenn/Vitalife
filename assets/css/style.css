@@ -41,6 +41,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -49,6 +50,7 @@ body {
   color: var(--secondary-color);
   line-height: 171%;
   background-color: var(--primary-bg);
+  overflow-x: hidden;
 }
 
 /* 
@@ -178,7 +180,7 @@ Back to top Btn
   bottom: 3rem;
   right: 3rem;
   z-index: 99;
-  background: var(--four-color);
+  background: var(--eight-color);
   width: 4.5rem;
   height: 4.5rem;
   transition: all 0.3s linear;
@@ -478,9 +480,6 @@ Start Earn Section
   padding: 3.5rem 3.5rem 4rem;
   background-color: #d8dce7;
   border-radius: 2rem;
-}
-.earn-bottom-content-2 {
-  padding-top: 2.7rem;
 }
 
 .earn-bottom-content .earn-bottom-title {
@@ -908,7 +907,7 @@ End Questions Section
 Start Footer Section
 =========================================
 */
-.footer-title  {
+.footer-title {
   margin-bottom: 2.4rem;
 }
 
@@ -917,7 +916,7 @@ Start Footer Section
 }
 
 .footer-page-list .footer-page-list-item .footer-page-list-item-link:hover {
-  color: var(--eight-color);
+  color: var(--third-color);
 }
 
 .footer-social-list .footer-social-list-item:not(:last-child) {

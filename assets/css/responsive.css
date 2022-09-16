@@ -65,13 +65,30 @@
 
   /* 
 	===============================
-	 Section Responsive
+	Earn Section Responsive
 	===============================
 	*/
+  .earn-bottom-content {
+    padding: 3rem 3rem 3.5rem;
+  }
 }
 
 @media (max-width: 991px) {
-   /* 
+  /* 
+  ==========================
+  Variables
+  ==========================
+  */
+  :root {
+    /*______ Font Size ______*/
+    --size-3xl: 5rem;
+    --size-2xl: 4rem;
+    --size-xl: 2.2rem;
+    --size-lg: 2rem;
+    --size-md: 1.8rem;
+  }
+
+  /* 
 	===============================
 	Hedaer Section Responsive
 	===============================
@@ -126,12 +143,41 @@
 
   /* 
 	===============================
-	 Section Responsive
+	Earn Section Responsive
 	===============================
 	*/
+  .earn-title .earn-sec-title-small {
+    font-size: 2.5rem;
+  }
+
+  /* 
+	===============================
+	Questions Section Responsive
+	===============================
+	*/
+  .accordion-btn::after {
+    width: 3rem !important;
+    height: 3rem !important;
+    background-size: 3rem 3rem !important;
+  }
 }
 
 @media (max-width: 767px) {
+  /* 
+  ==========================
+  Variables
+  ==========================
+  */
+  :root {
+    /*______ Font Size ______*/
+    --size-3xl: 3.6rem;
+    --size-2xl: 3.5rem;
+    --size-xl: 2rem;
+    --size-lg: 1.8rem;
+    --size-md: 1.6rem;
+    --size-sm: 1.4rem;
+  }
+
   /* 
 	===============================
 	Header Section Responsive
@@ -140,12 +186,34 @@
 
   /* 
 	===============================
-	 Section Responsive
+	 Earn Section Responsive
 	===============================
 	*/
+  .earn-title .earn-sec-title-small {
+    font-size: 2rem;
+  }
+
+  .earn-bottom-content {
+    padding: 2.5rem 2.5rem 3rem;
+  }
 }
 
 @media (max-width: 575px) {
+  /* 
+  ==========================
+  Variables
+  ==========================
+  */
+  :root {
+    /*______ Font Size ______*/
+    --size-3xl: 3.6rem;
+    --size-2xl: 3.5rem;
+    --size-xl: 2rem;
+    --size-lg: 1.8rem;
+    --size-md: 1.6rem;
+    --size-sm: 1.4rem;
+  }
+
   /* 
 	===============================
 	Header Section Responsive
