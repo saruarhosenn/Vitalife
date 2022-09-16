@@ -181,6 +181,11 @@ Back to top Btn
   background: var(--four-color);
   width: 4.5rem;
   height: 4.5rem;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
 }
 
 .line-150 {
@@ -518,15 +523,6 @@ Start Your Health Section
   margin-bottom: 3.2rem;
 }
 
-.slider-container {
-  /* max-width: 1300px; */
-  /* margin-left: auto; */
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
-
 .your-health-slider > * > * {
   padding-left: 0 !important;
 }
@@ -574,25 +570,166 @@ End Your Health Section
 
 /* 
 =========================================
-Start  Section
+Start Improve Health Section
+=========================================
+*/
+.improve-health-title {
+  margin-bottom: 10rem;
+}
+
+.improve-health-title .improve-health-sec-title {
+  margin-bottom: 3.2rem;
+}
+
+.improve-health {
+  border: 1px solid #979797;
+  border-radius: 2rem;
+}
+
+.improve-health .improve-health-text {
+  padding: 2.4rem 3.2rem;
+}
+
+.improve-health .improve-health-text h3 {
+  margin-bottom: 1.1rem;
+}
+
+.improve-health-list .improve-health-list-item img {
+  margin-top: 0.7rem;
+  margin-right: 1.6rem;
+}
+
+.improve-health-list .improve-health-list-item:not(:last-child) {
+  margin-bottom: 1.3rem;
+}
+
+.improve-health-bottom-desc {
+  margin-top: 4.8em;
+}
+
+.improve-health-bottom-desc p:nth-child(1) {
+  margin-bottom: 4rem;
+}
+/* 
+=========================================
+End Improve Health Section
 =========================================
 */
 
 /* 
 =========================================
-End  Section
+Start Rewards Section
 =========================================
 */
+.rewards-title {
+  margin-bottom: 7.2rem;
+}
 
+.rewards-title .rewards-sec-title {
+  margin-bottom: 3.2rem;
+}
+
+.rewards-sec-title-color {
+  background: linear-gradient(90.51deg, #cc1f46 1.71%, #2d73b6 30.17%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.rewards-box {
+  padding: 2.4rem;
+  border-radius: 1.2rem;
+}
+
+.rewards-box::before {
+  content: "";
+  width: 100%;
+  height: 0.9rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 2rem 2rem 0 0;
+}
+
+.r-b-1::before {
+  background-color: #923939;
+}
+
+.r-b-2::before {
+  background-color: #828282;
+}
+
+.r-b-3::before {
+  background-color: #e3c734;
+}
+
+.r-b-4::before {
+  background-color: #4197d3;
+}
+
+.r-b-1 {
+  background-color: rgba(146, 57, 57, 0.21);
+}
+
+.r-b-2 {
+  background-color: rgba(130, 130, 130, 0.19);
+}
+
+.r-b-3 {
+  background-color: rgba(227, 199, 52, 0.24);
+}
+
+.r-b-4 {
+  background-color: rgba(65, 151, 211, 0.2);
+}
+
+.rewards-box .rewards-box-title {
+  margin-bottom: 3rem;
+}
+
+.rewards-box-title h3 span:first-child {
+  margin-right: 1.5rem;
+}
+
+.r-b-1 .rewards-shape-1 {
+  width: 2.4rem;
+  height: 2.4rem;
+  background-color: #923939;
+}
+.r-b-2 .rewards-shape-2 {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 13px 26px 13px;
+  border-color: transparent transparent #bcbcbc transparent;
+}
+
+.r-b-3 .rewards-shape-3 {
+  width: 2.4rem;
+  height: 2.4rem;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  background-color: #E3C734;
+}
+
+.r-b-4 .rewards-shape-4 {
+  width: 2.4rem;
+  height: 2.4rem;
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  background-color: #4197D3;
+}
+
+.rewards-box-btn a {
+  padding: 0.8rem 0;
+}
+
+.rewards-box-btn a:hover {
+  color: var(--eight-color);
+}
 /* 
 =========================================
-Start  Section
-=========================================
-*/
-
-/* 
-=========================================
-End  Section
+End Rewards Section
 =========================================
 */
 

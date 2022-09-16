@@ -23,7 +23,7 @@
   /* ===== Wow JS ===== */
   new WOW().init();
 
-  /* ====== HERO SLIDER ====== */
+  /* ====== Your Health Slider ====== */
   $(".owl-carousel").owlCarousel({
     loop: true,
     autoplay: true,
