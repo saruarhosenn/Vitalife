@@ -710,14 +710,14 @@ Start Rewards Section
   width: 2.4rem;
   height: 2.4rem;
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-  background-color: #E3C734;
+  background-color: #e3c734;
 }
 
 .r-b-4 .rewards-shape-4 {
   width: 2.4rem;
   height: 2.4rem;
   clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
-  background-color: #4197D3;
+  background-color: #4197d3;
 }
 
 .rewards-box-btn a {
@@ -735,49 +735,171 @@ End Rewards Section
 
 /* 
 =========================================
-Start  Section
+Start Register Section
+=========================================
+*/
+.register-title {
+  margin-bottom: 5.9rem;
+}
+
+.register-title .register-sec-title {
+  margin-bottom: 3.2rem;
+}
+
+.register-content {
+  padding: 3.6rem;
+  border-radius: 2rem;
+}
+
+.register-content:hover {
+  background-color: var(--primary-bg);
+}
+
+.register-content:hover :is(h2, p) {
+  color: var(--five-color);
+  font-weight: 700;
+}
+
+.register-content .register-content-number {
+  margin-right: 6rem;
+}
+
+.register-content-app-store {
+  margin-top: 2.8rem;
+}
+
+.register-content-app-store a:first-child {
+  margin-right: 1.4rem;
+}
+/* 
+=========================================
+End Register Section
 =========================================
 */
 
 /* 
 =========================================
-End  Section
+Start Questions Section
 =========================================
 */
+.questions-title {
+  margin-bottom: 4.1rem;
+}
 
+.questions-sec-title {
+  margin-bottom: 3.2rem;
+}
+
+/* ------ Tab Style ------ */
+.main-tab {
+  margin-top: 3rem;
+}
+
+.tab-wrapper .tab {
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.tab .tablinks:not(:last-child) {
+  margin-right: 4.8rem;
+}
+
+.tab .tablinks {
+  padding: 1.3rem 0;
+  border-bottom: 2px solid transparent;
+  background-color: transparent;
+}
+
+/* tab active */
+.tab button.active {
+  color: var(--seven-color);
+  border-bottom: 2px solid var(--seven-color);
+}
+
+/* tab hide content */
+.main-tab .tabcontent {
+  display: none;
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s;
+}
+
+.main-tab .tabcontent .tabcontent-desc {
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+@-webkit-keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/*------ Accordion Style ------*/
+
+.accordion-i:not(:last-child) {
+  margin-bottom: 4.5rem;
+}
+
+.accordion-i {
+  border: 0 !important;
+  border-bottom: 0 !important;
+}
+
+.accordion-header .accordion-btn,
+.accordion-btn:not(.collapsed) {
+  box-shadow: 0 0 0 transparent;
+  color: var(--five-color) !important;
+  background-color: transparent !important;
+}
+
+.accordion-header .accordion-btn {
+  padding: 0;
+}
+
+.accordion-btn:focus {
+  border-color: transparent;
+  outline: 0;
+  box-shadow: 0 0 0 transparent;
+}
+
+.accordion-body-text {
+  background-color: transparent;
+  padding: 0 !important;
+}
+
+.accordion-body-text p {
+  margin-top: 2.4rem;
+}
+
+/* Accordion Icon style */
+.accordion-btn::after {
+  width: 4.6rem !important;
+  height: 4.6rem !important;
+  background-image: url("../images/questions/addition.svg") !important;
+  background-repeat: no-repeat;
+  background-size: 4.6rem 4.6rem !important;
+}
+
+.accordion-btn:not(.collapsed)::after {
+  background-image: url("../images/questions/substraction.svg") !important;
+}
 /* 
 =========================================
-Start  Section
-=========================================
-*/
-
-/* 
-=========================================
-End  Section
-=========================================
-*/
-
-/* 
-=========================================
-Start  Section
-=========================================
-*/
-
-/* 
-=========================================
-End  Section
-=========================================
-*/
-
-/* 
-=========================================
-Start  Section
-=========================================
-*/
-
-/* 
-=========================================
-End  Section
+End Questions Section
 =========================================
 */
 
@@ -786,7 +908,21 @@ End  Section
 Start Footer Section
 =========================================
 */
+.footer-title  {
+  margin-bottom: 2.4rem;
+}
 
+.footer-page-list .footer-page-list-item:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+
+.footer-page-list .footer-page-list-item .footer-page-list-item-link:hover {
+  color: var(--eight-color);
+}
+
+.footer-social-list .footer-social-list-item:not(:last-child) {
+  margin-right: 2.1rem;
+}
 /* 
 =========================================
 End Footer Section
