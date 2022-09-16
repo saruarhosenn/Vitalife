@@ -1,0 +1,657 @@
+/* 
+================================================
+Variables
+================================================
+*/
+:root {
+  /*_______ Font Family _______*/
+  --primary-font-700: "HelveticaNeue 700";
+  --primary-font-500: "HelveticaNeue 500";
+  --primary-font-400: "Helvetica Neue 400";
+  /*________ Font Size ________*/
+  --size-3xl: 6.4rem;
+  --size-2xl: 4.8rem;
+  --size-xl: 2.6rem;
+  --size-lg: 2.4rem;
+  --size-md: 2rem;
+  --size-sm: 1.6rem;
+  /*________ Text Color ________*/
+  --primary-color: #333333;
+  --secondary-color: #767676;
+  --third-color: #ffffff;
+  --four-color: #0f0e24;
+  --five-color: #000000;
+  --six-color: #828282;
+  --seven-color: #005c96;
+  --eight-color: #d52049;
+  /*_________ BG Color _________*/
+  --primary-bg: #ffffff;
+  --secondary-bg: #f8f9fc;
+  --footer-bg: #333333;
+}
+/* 
+================================================
+Variables
+================================================
+*/
+
+html {
+  font-size: 62.5%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--primary-font-400);
+  font-size: var(--size-sm);
+  color: var(--secondary-color);
+  line-height: 171%;
+  background-color: var(--primary-bg);
+}
+
+/* 
+==================================
+Bacic Setup
+==================================
+*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+::-moz-selection {
+  background-color: var(--four-color);
+  color: var(--third-color);
+}
+
+::selection {
+  background-color: var(--four-color);
+  color: var(--third-color);
+}
+
+::-webkit-scrollbar {
+  width: 0.7rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--primary-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--eight-color);
+  height: 6rem;
+}
+
+a,
+span,
+label {
+  display: inline-block;
+}
+
+ul li {
+  list-style: none;
+}
+
+a,
+a:focus {
+  text-decoration: none;
+}
+
+button:focus,
+input:focus,
+textarea:focus,
+button,
+input,
+textarea {
+  outline: 0;
+  border: 0;
+}
+
+button,
+input,
+textarea {
+  background-color: transparent;
+}
+
+button {
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+hr {
+  margin: 0;
+  padding: 0;
+}
+
+hr {
+  opacity: 1;
+  background-color: transparent;
+}
+
+.transition-linear {
+  -webkit-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+a,
+button,
+img,
+.transition-ease-in-out {
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+section,
+.footer {
+  padding: 8rem 0;
+}
+
+/* 
+===================================
+Start Reuseble Style
+===================================
+*/
+/*
+-------
+Back to top Btn
+-------------------
+*/
+#scroll-up-btn {
+  opacity: 0;
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  z-index: 99;
+  background: var(--four-color);
+  width: 4.5rem;
+  height: 4.5rem;
+}
+
+.line-150 {
+  line-height: 150% !important;
+}
+/* 
+===================================
+Start Reuseble Style
+===================================
+*/
+
+/* 
+===================================
+Font Family
+===================================
+*/
+.primary-font-700 {
+  font-family: var(--primary-font-700);
+}
+
+.primary-font-500 {
+  font-family: var(--primary-font-500);
+}
+
+.primary-font-400 {
+  font-family: var(--primary-font-400);
+}
+
+/* 
+  ===================================
+  Font Size
+  ===================================
+  */
+.size-3xl {
+  font-size: var(--size-3xl);
+  line-height: 125%;
+}
+
+.size-2xl {
+  font-size: var(--size-2xl);
+  line-height: 150%;
+}
+
+.size-xl {
+  font-size: var(--size-xl);
+  line-height: 150%;
+}
+
+.size-lg {
+  font-size: var(--size-lg);
+  line-height: 171%;
+}
+
+.size-md {
+  font-size: var(--size-md);
+  line-height: 150%;
+}
+
+.size-sm {
+  font-size: var(--size-sm);
+  line-height: 171%;
+}
+
+/* 
+  ===================================
+  Text Color
+  ===================================
+  */
+.primary-color {
+  color: var(--primary-color);
+}
+
+.secondary-color {
+  color: var(--secondary-color);
+}
+
+.third-color {
+  color: var(--third-color);
+}
+
+.four-color {
+  color: var(--four-color);
+}
+
+.five-color {
+  color: var(--five-color);
+}
+
+.six-color {
+  color: var(--six-color);
+}
+
+.seven-color {
+  color: var(--seven-color);
+}
+
+.eight-color {
+  color: var(--eight-color);
+}
+
+/* 
+  ===================================
+  BG Color
+  ===================================
+  */
+.primary-bg {
+  background-color: var(--primary-bg);
+}
+
+.secondary-bg {
+  background-color: var(--secondary-bg);
+}
+
+.footer-bg {
+  background-color: var(--footer-bg);
+}
+
+/* 
+=========================================
+Start Header Section
+=========================================
+*/
+
+/*
+--------------------
+Sticky Menu Style
+--------------------
+*/
+.bg-header {
+  padding: 3rem 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.stick {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+  -webkit-animation: 600ms ease-in-out 0s normal none 1 running fadeInDown;
+  animation: 600ms ease-in-out 0s normal none 1 running fadeInDown;
+}
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+/* 
+-----------------------
+Navbar Style 
+-----------------------
+*/
+.navBar .menu-show-btn {
+  position: relative;
+  cursor: pointer;
+}
+
+.navBar .menu-show-btn .menu-bar {
+  width: 2.4rem;
+  height: 0.3rem;
+  background-color: #d62049;
+  margin: 0.5rem 0;
+  border-radius: 0.5rem;
+}
+
+.navBar .main-menu {
+  margin-left: 6rem;
+}
+
+.navBar .main-menu .menu-hide-btn {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+
+.navBar .main-menu .menu-item:not(:last-child) {
+  margin-right: 4rem;
+}
+
+.navBar .main-menu .menu-item .menu-link,
+.navbar-link-text {
+  line-height: 1.9rem;
+}
+
+.navBar .main-menu .menu-item .menu-link:hover {
+  color: var(--eight-color);
+}
+
+.navbar-btn a:not(:last-child) {
+  margin-right: 4rem;
+}
+
+.navbar-link-btn {
+  padding: 1.1rem 4.7rem;
+  background-color: #d52049;
+  border-radius: 0.9rem;
+}
+
+.navbar-link-text:hover {
+  color: var(--eight-color);
+}
+
+.navbar-link-btn:hover {
+  color: var(--third-color);
+}
+/* 
+=========================================
+End Header Section
+=========================================
+*/
+
+/* 
+=========================================
+Start Hero Section
+=========================================
+*/
+.hero-section {
+  background: linear-gradient(108.31deg, #cc1f46 7.02%, #005c96 86.2%);
+  padding: 22rem 0 9rem;
+}
+
+.hero-text .hero-title {
+  margin-bottom: 3.6rem;
+}
+
+.hero-text .hero-description {
+  max-width: 108.8rem;
+}
+/* 
+=========================================
+End Hero Section
+=========================================
+*/
+
+/* 
+=========================================
+Start Earn Section
+=========================================
+*/
+.earn-title {
+  margin-bottom: 4.8rem;
+}
+
+.earn-title .earn-sec-title-small {
+  margin-top: 2rem;
+  font-size: 3rem;
+}
+
+.earn-middle-content {
+  margin-bottom: 9.6rem;
+}
+
+.earn-img .earn-play-youtube {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.earn-bottom-content {
+  padding: 3.5rem 3.5rem 4rem;
+  background-color: #d8dce7;
+  border-radius: 2rem;
+}
+.earn-bottom-content-2 {
+  padding-top: 2.7rem;
+}
+
+.earn-bottom-content .earn-bottom-title {
+  margin-top: 4rem;
+}
+/* 
+=========================================
+End Earn Section
+=========================================
+*/
+
+/* 
+=========================================
+Start We Do Section
+=========================================
+*/
+.we-do-title {
+  margin-bottom: 8.5rem;
+}
+
+.we-do .we-do-text .we-do-text-title {
+  margin: 3.2rem 0 1.6rem;
+}
+/* 
+=========================================
+End We Do Section
+=========================================
+*/
+
+/* 
+=========================================
+Start Your Health Section
+=========================================
+*/
+.your-health-title {
+  margin-bottom: 10.7rem;
+}
+
+.your-health-title .your-health-sec-title {
+  margin-bottom: 3.2rem;
+}
+
+.slider-container {
+  /* max-width: 1300px; */
+  /* margin-left: auto; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.your-health-slider > * > * {
+  padding-left: 0 !important;
+}
+
+.your-health-slider-item {
+  padding: 2.4rem;
+  border-radius: 2rem;
+}
+
+.y-h-s-i-1,
+.y-h-s-i-5 {
+  background-color: #dbacb7;
+}
+
+.y-h-s-i-2 {
+  background-color: #4bb7bf;
+}
+
+.y-h-s-i-3 {
+  background-color: #ffabcc;
+}
+
+.y-h-s-i-4 {
+  background-color: #46b972;
+}
+
+.your-health-slider-item .your-health-slider-item-img {
+  width: 8.2rem;
+  height: 8.2rem;
+  border-radius: 1.6rem;
+}
+
+.your-health-slider-item .your-health-slider-item-img img {
+  width: 4.2rem;
+  height: 4.2rem;
+}
+.your-health-slider-item-text h3 {
+  margin: 2.4rem 0 1.6rem;
+}
+/* 
+=========================================
+End Your Health Section
+=========================================
+*/
+
+/* 
+=========================================
+Start  Section
+=========================================
+*/
+
+/* 
+=========================================
+End  Section
+=========================================
+*/
+
+/* 
+=========================================
+Start  Section
+=========================================
+*/
+
+/* 
+=========================================
+End  Section
+=========================================
+*/
+
+/* 
+=========================================
+Start  Section
+=========================================
+*/
+
+/* 
+=========================================
+End  Section
+=========================================
+*/
+
+/* 
+=========================================
+Start  Section
+=========================================
+*/
+
+/* 
+=========================================
+End  Section
+=========================================
+*/
+
+/* 
+=========================================
+Start  Section
+=========================================
+*/
+
+/* 
+=========================================
+End  Section
+=========================================
+*/
+
+/* 
+=========================================
+Start  Section
+=========================================
+*/
+
+/* 
+=========================================
+End  Section
+=========================================
+*/
+
+/* 
+=========================================
+Start Footer Section
+=========================================
+*/
+
+/* 
+=========================================
+End Footer Section
+=========================================
+*/
