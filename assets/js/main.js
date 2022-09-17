@@ -20,9 +20,6 @@
     $(".main-menu").removeClass("navBar show-menu");
   });
 
-  /* ===== Wow JS ===== */
-  new WOW().init();
-
   /* ====== Your Health Slider ====== */
   $(".owl-carousel").owlCarousel({
     loop: true,
