@@ -1,29 +1,55 @@
-@media (max-width: 1599px) {
+@media (min-width: 1441px) {
   /* 
-	===============================
-	 Section Responsive
-	===============================
-	*/
+  =========================================
+  Start Your Health Section
+  =========================================
+  */
+  .slider-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
 
+@media (max-width: 1440px) {
   /* 
-	===============================
-	 Section Responsive
-	===============================
-	*/
+  =========================================
+  Start Your Health Section
+  =========================================
+  */
+  .slider-container {
+    width: 100%;
+    max-width: 1296px;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 1300px) and (max-width: 1366px) {
+  /* 
+  =========================================
+  Start Your Health Section
+  =========================================
+  */
+  .slider-container {
+    max-width: 1260px;
+  }
+}
+
+@media (max-width: 1200px) {
+  /* 
+  =========================================
+  Start Your Health Section
+  =========================================
+  */
+  .slider-container {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 1399px) {
-  /* 
-	===============================
-	 Section Responsive
-	===============================
-	*/
-
-  /* 
-	===============================
-	 Section Responsive
-	===============================
-	*/
 
   /* 
 	===============================
@@ -42,6 +68,15 @@
 }
 
 @media (max-width: 1199px) {
+  /* 
+  =========================
+  Variables
+  =========================
+  */
+  :root {
+    /*_______ Font Size _______*/
+    --size-lg: 2.3rem;
+  }
   /* 
 	===============================
 	Hedaer Section Responsive
@@ -71,6 +106,17 @@
   .earn-bottom-content {
     padding: 3rem 3rem 3.5rem;
   }
+
+  /* 
+  =========================================
+  Start Your Health Section
+  =========================================
+  */
+  .slider-container {
+    max-width: 960px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }
 
 @media (max-width: 991px) {
@@ -81,7 +127,7 @@
   */
   :root {
     /*______ Font Size ______*/
-    --size-3xl: 5rem;
+    --size-3xl: 4.8rem;
     --size-2xl: 4rem;
     --size-xl: 2.2rem;
     --size-lg: 2rem;
@@ -93,6 +139,10 @@
 	Hedaer Section Responsive
 	===============================
 	*/
+  .bg-header {
+    padding: 2rem 0;
+  }
+
   .navBar .main-menu {
     margin-left: 0rem;
     position: relative;
@@ -101,7 +151,7 @@
     left: -150%;
     padding: 3rem;
     background: var(--four-color);
-    width: 35rem;
+    width: 32rem;
     z-index: 9999;
     height: 100%;
     overflow-x: hidden;
@@ -150,6 +200,19 @@
     font-size: 2.5rem;
   }
 
+  .earn-img .earn-play-youtube img {
+    width: 4.8rem;
+  }
+
+  /* 
+  =========================================
+  Start Your Health Section
+  =========================================
+  */
+  .slider-container {
+    max-width: 720px;
+  }
+
   /* 
 	===============================
 	Questions Section Responsive
@@ -170,7 +233,7 @@
   */
   :root {
     /*______ Font Size ______*/
-    --size-3xl: 3.6rem;
+    --size-3xl: 3.5rem;
     --size-2xl: 3.5rem;
     --size-xl: 2rem;
     --size-lg: 1.8rem;
@@ -179,10 +242,22 @@
   }
 
   /* 
+  ===================================
+  Reuseble Style
+  ===================================
+  */
+  section {
+    padding: 4rem 0 5.6rem;
+  }
+
+  /* 
 	===============================
-	Header Section Responsive
+	Hero Section Responsive
 	===============================
 	*/
+  .hero-section {
+    padding-top: 17rem;
+  }
 
   /* 
 	===============================
@@ -196,9 +271,267 @@
   .earn-bottom-content {
     padding: 2.5rem 2.5rem 3rem;
   }
+
+  /* 
+	===============================
+	Your Health Section Responsive
+	===============================
+	*/
+  .your-health-title {
+    margin-bottom: 5rem;
+  }
+
+  .slider-container {
+    max-width: 540px;
+  }
+
+  /* 
+	==================================
+	Improve Health Section Responsive
+	==================================
+	*/
+  .improve-health-title {
+    margin-bottom: 5rem;
+  }
+
+  .improve-health-bottom-desc {
+    margin-top: 2.5em;
+  }
+
+  .improve-health-bottom-desc p:nth-child(1) {
+    margin-bottom: 3.2rem;
+  }
+
+  /* 
+	==================================
+	Rewards Section Responsive
+	==================================
+	*/
+  .rewards-title {
+    margin-bottom: 5rem;
+  }
 }
 
 @media (max-width: 575px) {
+  /* 
+	===============================
+	Header Section Responsive
+	===============================
+	*/
+  .bg-header {
+    padding: 1.5rem 0;
+  }
+
+  /* 
+	===============================
+	Hero Section Responsive
+	===============================
+	*/
+  .hero-section {
+    padding: 14rem 0 7rem;
+  }
+
+  .hero-text .hero-title {
+    margin-bottom: 2rem;
+  }
+
+  /* 
+	===============================
+	Earn Section Responsive
+	===============================
+	*/
+  .earn-title {
+    margin-bottom: 1.6rem;
+  }
+
+  .earn-middle-content {
+    margin-bottom: 3.2rem;
+  }
+
+  .earn-bottom-content .earn-bottom-img {
+    max-width: 12.5rem;
+  }
+
+  .earn-bottom-content .earn-bottom-title {
+    margin-top: 0rem;
+    margin-left: 2.8rem;
+  }
+
+  /* 
+	===============================
+	We Do Section Responsive
+	===============================
+	*/
+  .we-do-title {
+    margin-bottom: 5rem;
+  }
+
+  .we-do .we-do-icon {
+    max-width: 4.5rem;
+  }
+
+  .we-do .we-do-text {
+    margin-left: 3.5rem;
+  }
+
+  .we-do .we-do-text .we-do-text-title {
+    margin: 0rem 0 0.8rem;
+  }
+
+  /* 
+	===============================
+	Your Health Section Responsive
+	===============================
+	*/
+  .your-health-title,
+  .your-health-title .your-health-sec-title {
+    margin-bottom: 1.6rem;
+  }
+
+  .slider-container {
+    max-width: 100%;
+    padding-right: 0;
+  }
+
+  /* 
+	==================================
+	Improve Health Section Responsive
+	==================================
+	*/
+  .improve-health-title {
+    margin-bottom: 1.7rem;
+  }
+
+  .improve-health-title .improve-health-sec-title {
+    margin-bottom: 1.2rem;
+  }
+
+  .improve-health-bottom-desc {
+    margin-top: 1.6em;
+  }
+
+  /* 
+	==================================
+	Rewards Section Responsive
+	==================================
+	*/
+  .rewards-title {
+    margin-bottom: 1.6rem;
+  }
+
+  .rewards-title .rewards-sec-title {
+    margin-bottom: 1.2rem;
+  }
+
+  .rewards-box {
+    padding: 2rem 1.6rem 1.6rem;
+  }
+
+  /* 
+	===============================
+	Register Section Responsive
+	===============================
+	*/
+  .register-title .register-sec-title {
+    margin-bottom: 1.2rem;
+  }
+
+  .register-title {
+    margin-bottom: 2.4rem;
+  }
+
+  .register-content {
+    padding: 1.6rem 2.6rem;
+  }
+
+  .register-content .register-content-number {
+    margin-right: 3.6rem;
+  }
+
+  .register-img img {
+    max-width: 25.5rem;
+  }
+
+  /* 
+	===============================
+	Questions Section Responsive
+	===============================
+	*/
+  .questions-title {
+    margin-bottom: 0.6rem;
+  }
+
+  .questions-sec-title {
+    margin-bottom: 1.2rem;
+  }
+
+  .accordion-i:not(:last-child) {
+    margin-bottom: 2.4rem;
+  }
+
+  .tab .tablinks {
+    padding: 0.6rem 0;
+  }
+
+  .main-tab {
+    margin-top: 2.4rem;
+  }
+
+  .accordion-body-text p {
+    margin-top: 1.2rem;
+  }
+
+  /* 
+	===============================
+	Footer Section Responsive
+	===============================
+	*/
+  .footer-logo img {
+    max-width: 6.8rem;
+  }
+
+  .footer-social-list {
+    margin-top: 2rem;
+  }
+
+  .footer-social-list .footer-social-list-item:not(:last-child) {
+    margin-right: 1rem;
+  }
+
+  .footer-social-list .footer-social-list-item .footer-social-list-item-link {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .footer-social-list
+    .footer-social-list-item
+    .footer-social-list-item-link
+    img {
+    width: 1.2rem;
+  }
+}
+
+@media (max-width: 549px) {
+  /* 
+	===============================
+	Footer Section Responsive
+	===============================
+	*/
+  .footer-title {
+    font-size: 1.4rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .footer-page-list .footer-page-list-item:not(:last-child) {
+    margin-bottom: 0.4rem;
+  }
+
+  .footer-page-list .footer-page-list-item .footer-page-list-item-link {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 531px) {
   /* 
   ==========================
   Variables
@@ -206,28 +539,324 @@
   */
   :root {
     /*______ Font Size ______*/
-    --size-3xl: 3.6rem;
-    --size-2xl: 3.5rem;
-    --size-xl: 2rem;
-    --size-lg: 1.8rem;
-    --size-md: 1.6rem;
-    --size-sm: 1.4rem;
+    --size-3xl: 2.9rem;
+    --size-2xl: 3rem;
+    --size-xl: 1.8rem;
+    --size-lg: 1.6rem;
+    --size-md: 1.4rem;
+    --size-sm: 1.2rem;
+  }
+
+  /* 
+	==================================
+	Earn Section Responsive
+	==================================
+	*/
+  .earn-title .earn-sec-title-small {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 482px) {
+  /* 
+	==================================
+	Questions Section Responsive
+	==================================
+	*/
+  .tab .tablinks:not(:last-child) {
+    margin-right: 2.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  /* 
+	==================================
+	Rewards Section Responsive
+	==================================
+	*/
+  .rewards-box-row .rewards-box-col {
+    width: 100%;
+  }
+
+  .rewards-box-col .rewards-box {
+    padding: 2.4rem 1.6rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .rewards-box .rewards-box-title {
+    margin-bottom: 0rem;
+  }
+}
+
+@media (max-width: 450px) {
+  /* 
+  ==========================
+  Variables
+  ==========================
+  */
+  :root {
+    /*______ Font Size ______*/
+    --size-3xl: 2.4rem;
+    --size-2xl: 2.4rem;
   }
 
   /* 
 	===============================
-	Header Section Responsive
+	Footer Section Responsive
 	===============================
 	*/
+  .footer-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+  }
 
-  /* 
-	===============================
-	 Section Responsive
-	===============================
-	*/
+  .footer-page-list .footer-page-list-item:not(:last-child) {
+    margin-bottom: 0rem;
+  }
+
+  .footer-page-list .footer-page-list-item .footer-page-list-item-link {
+    font-size: 0.8rem;
+  }
+
+  .footer-social-list .footer-social-list-item .footer-social-list-item-link {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .footer-social-list
+    .footer-social-list-item
+    .footer-social-list-item-link
+    img {
+    width: 0.8rem;
+  }
 }
 
 @media (max-width: 425px) {
+  /* 
+	===============================
+	Register Section Responsive
+	===============================
+	*/
+  .register-content-app-store {
+    margin-top: 1.1rem;
+  }
+}
+
+@media (max-width: 411px) {
+  /* 
+	===============================
+	Register Section Responsive
+	===============================
+	*/
+  .tab .tablinks {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 390px) {
+  /* 
+  ==========================
+  Variables
+  ==========================
+  */
+  :root {
+    /*______ Font Size ______*/
+    --size-xl: 1.2rem;
+    --size-lg: 1.4rem;
+    --size-md: 1.2rem;
+    --size-sm: 1.2rem;
+  }
+
+  /* 
+  ===================================
+  Reuseble Style
+  ===================================
+  */
+  section {
+    padding: 2.6rem 0 3.6rem;
+  }
+
+  /* 
+	===============================
+	Hero Section Responsive
+	===============================
+	*/
+  .hero-section {
+    padding: 10rem 0 4.5rem;
+  }
+
+  .hero-text .hero-title {
+    margin-bottom: 1.6rem;
+  }
+
+  /* 
+	===================================
+	Your Health Section Responsive
+	===================================
+	*/
+  .your-health-slider-item {
+    padding: 1.6rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .your-health-slider-item .your-health-slider-item-img {
+    width: 6.1rem;
+    height: 7.7rem;
+    padding: 0.5rem;
+  }
+
+  .your-health-slider-item .your-health-slider-item-text {
+    margin-left: 1.2rem;
+  }
+  .your-health-slider-item-text h3 {
+    margin: 0rem 0 1.4rem;
+  }
+
+  /* 
+	===================================
+	Improve Health Section Responsive
+	===================================
+	*/
+  .improve-health {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .improve-health .improve-health-text {
+    padding: 1.6rem;
+  }
+
+  .improve-health .improve-health-img-1 {
+    display: none;
+  }
+
+  .improve-health .improve-health-img-2 {
+    display: inline-block !important;
+  }
+  .improve-health .improve-health-text h3 {
+    font-size: 1.2rem;
+  }
+
+  .improve-health-list .improve-health-list-item:not(:last-child) {
+    margin-bottom: 0.8rem;
+  }
+
+  .improve-health-list .improve-health-list-item img {
+    margin-top: 0.4rem;
+    margin-right: 0.9rem;
+  }
+
+  /* 
+	===================================
+	Question Section Responsive
+	===================================
+	*/
+  .accordion-btn::after {
+    width: 2.4rem !important;
+    height: 2.4rem !important;
+    background-size: 2.4rem 2.4rem !important;
+  }
+
+  /* 
+	===============================
+	Footer Section Responsive
+	===============================
+	*/
+  .footer {
+    padding: 2.6rem 0 3.1rem;
+  }
+}
+
+@media (max-width: 385px) {
+  /* 
+	===================================
+	Your Health Section Responsive
+	===================================
+	*/
+  .your-health-slider-item .your-health-slider-item-img {
+    width: 5.6rem;
+    height: 7rem;
+  }
+
+  .your-health-slider-item .your-health-slider-item-img img {
+    width: 3.5rem;
+  }
+
+  /* 
+	===================================
+	Improve Health Section Responsive
+	===================================
+	*/
+  .improve-health .improve-health-img-2 {
+    height: 15.1rem;
+  }
+}
+
+@media (max-width: 380px) {
+  /* 
+	===================================
+	Improve Health Section Responsive
+	===================================
+	*/
+  .improve-health {
+    padding: 2rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+
+  .i-h-1 img:nth-child(2) {
+    border-radius: 0 1rem 1rem 0;
+  }
+
+  .i-h-2 img:nth-child(2) {
+    border-radius: 1.5rem 0 0 1.5rem;
+  }
+
+  .improve-health .improve-health-img-2 {
+    height: auto;
+    -webkit-box-ordinal-group: 1 !important;
+        -ms-flex-order: 0 !important;
+            order: 0 !important;
+  }
+
+  .improve-health .improve-health-text {
+    padding: 0rem;
+    margin-top: 1.6rem;
+  }
+
+  .improve-health .improve-health-text h3 {
+    text-align: center;
+  }
+
+  .improve-health .improve-health-text {
+    -webkit-box-ordinal-group: 2 !important;
+        -ms-flex-order: 1 !important;
+            order: 1 !important;
+  }
+}
+
+@media (max-width: 370px) {
   /* 
 	===============================
 	Header Section Responsive
@@ -235,5 +864,113 @@
 	*/
   .navBar .main-menu {
     width: 100%;
+  }
+
+  /* 
+	===============================
+	Hero Section Responsive
+	===============================
+	*/
+  .hero-title .hero-title-br {
+    display: none;
+  }
+
+  /* 
+	===============================
+	Earn Section Responsive
+	===============================
+	*/
+  .earn-bottom-content {
+    padding: 2rem;
+  }
+
+  .earn-bottom-content .earn-bottom-img {
+    max-width: 9.5rem;
+  }
+
+  .earn-bottom-content .earn-bottom-title {
+    margin-left: 2rem;
+  }
+}
+
+@media (max-width: 369px) {
+  /* 
+	===================================
+	Your Health Section Responsive
+	===================================
+	*/
+  .your-health-slider-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+
+  .your-health-slider-item .your-health-slider-item-text {
+    margin-left: 0;
+  }
+  .your-health-slider-item-text h3 {
+    margin: 2rem 0 1.4rem;
+  }
+
+  /* 
+	===============================
+	Rewards Section Responsive
+	===============================
+	*/
+  .rewards-box-col .rewards-box {
+    padding: 2.4rem 1.6rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+
+  .rewards-box .rewards-box-title {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 325px) {
+  /* 
+	===============================
+	Footer Section Responsive
+	===============================
+	*/
+  .footer-row > * {
+    width: 100%;
+  }
+
+  .footer-title {
+    font-size: 1.4rem;
+  }
+
+  .footer-page-list .footer-page-list-item:not(:last-child) {
+    margin-bottom: 0.4rem;
+  }
+
+  .footer-page-list .footer-page-list-item .footer-page-list-item-link {
+    font-size: 1.2rem;
+  }
+
+  .footer-social-list .footer-social-list-item .footer-social-list-item-link {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .footer-social-list
+    .footer-social-list-item
+    .footer-social-list-item-link
+    img {
+    width: 1.2rem;
   }
 }

@@ -8,6 +8,7 @@ Variables
   --primary-font-700: "HelveticaNeue 700";
   --primary-font-500: "HelveticaNeue 500";
   --primary-font-400: "Helvetica Neue 400";
+  
   /*________ Font Size ________*/
   --size-3xl: 6.4rem;
   --size-2xl: 4.8rem;
@@ -15,6 +16,7 @@ Variables
   --size-lg: 2.4rem;
   --size-md: 2rem;
   --size-sm: 1.6rem;
+
   /*________ Text Color ________*/
   --primary-color: #333333;
   --secondary-color: #767676;
@@ -24,6 +26,7 @@ Variables
   --six-color: #828282;
   --seven-color: #005c96;
   --eight-color: #d52049;
+
   /*_________ BG Color _________*/
   --primary-bg: #ffffff;
   --secondary-bg: #f8f9fc;
@@ -159,11 +162,6 @@ img,
   transition: all 0.3s ease-in-out;
 }
 
-section,
-.footer {
-  padding: 8rem 0;
-}
-
 /* 
 ===================================
 Start Reuseble Style
@@ -174,6 +172,10 @@ Start Reuseble Style
 Back to top Btn
 -------------------
 */
+section {
+  padding: 8rem 0 9.6rem;
+}
+
 #scroll-up-btn {
   opacity: 0;
   position: fixed;
@@ -331,7 +333,8 @@ Sticky Menu Style
   position: fixed;
   top: 0;
   z-index: 9999;
-  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+          box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
   -webkit-animation: 600ms ease-in-out 0s normal none 1 running fadeInDown;
   animation: 600ms ease-in-out 0s normal none 1 running fadeInDown;
 }
@@ -434,6 +437,7 @@ Start Hero Section
 =========================================
 */
 .hero-section {
+  background: -o-linear-gradient(341.69deg, #cc1f46 7.02%, #005c96 86.2%);
   background: linear-gradient(108.31deg, #cc1f46 7.02%, #005c96 86.2%);
   padding: 22rem 0 9rem;
 }
@@ -473,7 +477,9 @@ Start Earn Section
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .earn-bottom-content {
@@ -629,7 +635,8 @@ Start Rewards Section
 }
 
 .rewards-sec-title-color {
-  background: linear-gradient(90.51deg, #cc1f46 1.71%, #2d73b6 30.17%);
+  background: -o-linear-gradient(359.49deg, #cc1f46 1.71%, #2d73b6 110.1%);
+  background: linear-gradient(90.51deg, #cc1f46 1.71%, #2d73b6 110.1%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -708,19 +715,21 @@ Start Rewards Section
 .r-b-3 .rewards-shape-3 {
   width: 2.4rem;
   height: 2.4rem;
-  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+          clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
   background-color: #e3c734;
 }
 
 .r-b-4 .rewards-shape-4 {
   width: 2.4rem;
   height: 2.4rem;
-  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  -webkit-clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+          clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
   background-color: #4197d3;
 }
 
 .rewards-box-btn a {
-  padding: 0.8rem 0;
+  padding: 0.8rem 1.2rem;
 }
 
 .rewards-box-btn a:hover {
@@ -860,7 +869,8 @@ Start Questions Section
 
 .accordion-header .accordion-btn,
 .accordion-btn:not(.collapsed) {
-  box-shadow: 0 0 0 transparent;
+  -webkit-box-shadow: 0 0 0 transparent;
+          box-shadow: 0 0 0 transparent;
   color: var(--five-color) !important;
   background-color: transparent !important;
 }
@@ -872,7 +882,8 @@ Start Questions Section
 .accordion-btn:focus {
   border-color: transparent;
   outline: 0;
-  box-shadow: 0 0 0 transparent;
+  -webkit-box-shadow: 0 0 0 transparent;
+          box-shadow: 0 0 0 transparent;
 }
 
 .accordion-body-text {
@@ -907,6 +918,10 @@ End Questions Section
 Start Footer Section
 =========================================
 */
+.footer {
+  padding: 6rem 0 6.5rem;
+}
+
 .footer-title {
   margin-bottom: 2.4rem;
 }
@@ -921,6 +936,19 @@ Start Footer Section
 
 .footer-social-list .footer-social-list-item:not(:last-child) {
   margin-right: 2.1rem;
+}
+
+.footer-social-list .footer-social-list-item .footer-social-list-item-link {
+  width: 3.3rem;
+  height: 3.3rem;
+}
+
+.footer-social-list .footer-social-list-item .footer-social-list-item-link img {
+  width: 1.6rem;
+  -webkit-filter: invert(25%) sepia(0%) saturate(2255%) hue-rotate(139deg)
+    brightness(88%) contrast(107%);
+          filter: invert(25%) sepia(0%) saturate(2255%) hue-rotate(139deg)
+    brightness(88%) contrast(107%);
 }
 /* 
 =========================================
