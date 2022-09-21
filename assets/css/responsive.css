@@ -86,10 +86,6 @@
     margin-left: 5rem;
   }
 
-  .navBar .main-menu .menu-item:not(:last-child) {
-    margin-right: 3rem;
-  }
-
   .navbar-btn a:not(:last-child) {
     margin-right: 2rem;
   }
@@ -139,8 +135,8 @@
 	Hedaer Section Responsive
 	===============================
 	*/
-  .bg-header {
-    padding: 2rem 0;
+  .navbar-logo .navbar-logo-img {
+    max-width: 9rem;
   }
 
   .navBar .main-menu {
@@ -256,7 +252,7 @@
 	===============================
 	*/
   .hero-section {
-    padding-top: 17rem;
+    padding-top: 19rem;
   }
 
   /* 
@@ -318,8 +314,8 @@
 	Header Section Responsive
 	===============================
 	*/
-  .bg-header {
-    padding: 1.5rem 0;
+  .navbar-logo .navbar-logo-img {
+    max-width: 7rem;
   }
 
   /* 
@@ -328,7 +324,7 @@
 	===============================
 	*/
   .hero-section {
-    padding: 14rem 0 7rem;
+    padding: 15rem 0 7rem;
   }
 
   .hero-text .hero-title {
@@ -690,7 +686,7 @@
 	===============================
 	*/
   .hero-section {
-    padding: 10rem 0 4.5rem;
+    padding: 13rem 0 4.5rem;
   }
 
   .hero-text .hero-title {

@@ -319,7 +319,7 @@ Sticky Menu Style
 --------------------
 */
 .bg-header {
-  padding: 3rem 0;
+  padding: 1rem 0;
   position: absolute;
   top: 0;
   left: 0;
@@ -372,6 +372,11 @@ Sticky Menu Style
 Navbar Style 
 -----------------------
 */
+.navbar-logo .navbar-logo-img {
+  width: 100%;
+  max-width: 11.5rem;
+}
+
 .navBar .menu-show-btn {
   position: relative;
   cursor: pointer;
